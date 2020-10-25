@@ -34,3 +34,4 @@
 .cph
 test
 .gitignore
+.vscode/settings.json
