@@ -1,0 +1,29 @@
+v.size() = 0
+v.capacity() = 0
+v.size() = 1
+v.capacity() = 1
+v.size() = 2
+v.capacity() = 2
+v.size() = 3
+v.capacity() = 4
+v.size() = 4
+v.capacity() = 4
+v.size() = 5
+v.capacity() = 8
+v.size() = 6
+v.capacity() = 8
+v.size() = 7
+v.capacity() = 8
+v.size() = 8
+v.capacity() = 8
+v.size() = 9
+v.capacity() = 16
+v.size() = 10
+v.capacity() = 16
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+10 20 30 
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 23 -1 -1 -1 -1 -1 -1 -1 
+-1 -1 23 -1 -1 -1 -1 -1 -1 -1 true
+true
+01

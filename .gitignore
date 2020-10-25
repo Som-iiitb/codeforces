@@ -32,3 +32,5 @@
 *.app
 
 .cph
+test
+.gitignore

@@ -1,4 +1,4 @@
-// Problem Link - https://www.codechef.com/NOV19B/problems/CAMC
+// Problem Link - 
 /* By Sanket Singh */
 #include<bits/stdc++.h>
 //#include<ext/pb_ds/assoc_container.hpp>
@@ -31,8 +31,8 @@ vs tokenizer(string str,char ch) {std::istringstream var((str)); vs v; string t;
 void err(istream_iterator<string> it) {}
 template<typename T, typename... Args>
 void err(istream_iterator<string> it, T a, Args... args) {
-	cout << *it << " = " << a << endl;
-	err(++it, args...);
+    cout << *it << " = " << a << endl;
+    err(++it, args...);
 }
 //typedef tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update> pbds;
 
@@ -41,48 +41,54 @@ void file_i_o()
     ios_base::sync_with_stdio(0); 
     cin.tie(0); 
     cout.tie(0);
-	#ifndef ONLINE_JUDGE
-	    freopen("input.txt", "r", stdin);
-	    freopen("output.txt", "w", stdout);
-	#endif
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
 }
 
 int main(int argc, char const *argv[]) {
-	file_i_o();
-	int t;
-	cin>>t;
-	while(t--) {
-		int m, n;
-		cin>>n>>m;
-		vector<pair<ll, int> > v(n);
-		loop(i, 0, n-1) {
-			cin>>v[i].ff;
-			v[i].ss = i%m;
-		}
-		// for(int i =0 ; i < n; i++) {
-		// 	cout<<v[i].ff<<" ";
-		// }
-		int count = m;
-		int right = 0;
-		ll ans = INT_MAX;
-		sort(v.begin(), v.end());
-		vector<int> cnt(m, 0);
-		loop(left, 0, n-1) {
-			while(right < n and count > 0) {
-				count -= cnt[v[right].ss] == 0;
-				cnt[v[right].ss]++;
-				right++;
-			}
-			if(count == 0) { // we got m uniq boxes
-				ans = min(ans, v[right-1].ff - v[left].ff);
-			}
-			if(cnt[v[left].ss] > 0) {
-				cnt[v[left].ss]--;
-			}
-			// missing?
-			count += cnt[v[left].ss] == 0;
-		}
-		cout<<ans<<endl;
-	}
-	return 0;
+    file_i_o();
+    vector<int> v;
+    log(v.size(), v.capacity());
+    for(int i =0 ; i < 10; i++) {
+        v.push_back(i);
+        log(v.size(), v.capacity());
+    }
+
+    vector<int> v1(10, -1);
+    logarr(v1, 0, v1.size() - 1);
+    vector<int> v2 {10, 20, 30};
+    vector<int> v3 (v2.begin(), v2.end());
+    logarr(v3, 0, v3.size() - 1);
+    // vector<int> v4(arr, arr+x); x -> index value
+
+    for(int i = 0; i < v1.size(); i++) {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+    v1[2] = 23;
+    for(int i = 0; i < v1.size(); i++) {
+        cout<<v1[i]<<" ";
+    }
+    // for-each
+    cout<<endl;
+
+    for(auto el: v1) {
+        cout<<el<<" ";
+    }
+    // two arrays compare ?????
+    cout<<((v3 == v2) ? "true" : "false");
+    // all true// all false
+
+    vector<bool> arr;
+    for(int i = 0 ; i < 5; i++) {
+        arr.push_back(true);
+    }
+
+    cout<<((arr == vector<bool> (5, true)? "\ntrue" : "\nfalse"));
+    v.clear();
+    cout<<"\n"<<v.size();
+    cout<<(v.empty());
+    return 0;
 }
