@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/som/codeforces/codeforces/build",
+  "command": "/bin/g++-10    -g   -o CMakeFiles/codeforces.dir/main.cpp.o -c /home/som/codeforces/codeforces/main.cpp",
+  "file": "/home/som/codeforces/codeforces/main.cpp"
+}
+]
