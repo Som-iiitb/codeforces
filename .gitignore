@@ -42,3 +42,4 @@ mutithreading
 main
 str_test
 .vscode/c_cpp_properties.json
+process_thread
