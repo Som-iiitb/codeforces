@@ -300,8 +300,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/som/codeforces/codeforces/build",
-		"source" : "/home/som/codeforces/codeforces"
+		"build" : "/home/ub/Documents/codeforces/build",
+		"source" : "/home/ub/Documents/codeforces"
 	},
 	"version" : 
 	{

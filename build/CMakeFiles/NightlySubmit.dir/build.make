@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/som/codeforces/codeforces
+CMAKE_SOURCE_DIR = /home/ub/Documents/codeforces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/som/codeforces/codeforces/build
+CMAKE_BINARY_DIR = /home/ub/Documents/codeforces/build
 
 # Utility rule file for NightlySubmit.
 
@@ -71,6 +71,6 @@ CMakeFiles/NightlySubmit.dir/clean:
 .PHONY : CMakeFiles/NightlySubmit.dir/clean
 
 CMakeFiles/NightlySubmit.dir/depend:
-	cd /home/som/codeforces/codeforces/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/som/codeforces/codeforces /home/som/codeforces/codeforces /home/som/codeforces/codeforces/build /home/som/codeforces/codeforces/build /home/som/codeforces/codeforces/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ub/Documents/codeforces/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ub/Documents/codeforces /home/ub/Documents/codeforces /home/ub/Documents/codeforces/build /home/ub/Documents/codeforces/build /home/ub/Documents/codeforces/build/CMakeFiles/NightlySubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlySubmit.dir/depend
 

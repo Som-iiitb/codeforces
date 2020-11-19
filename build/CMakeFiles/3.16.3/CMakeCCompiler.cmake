@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "/bin/gcc-10")
+set(CMAKE_C_COMPILER "/bin/x86_64-linux-gnu-gcc-10")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "10.2.0")

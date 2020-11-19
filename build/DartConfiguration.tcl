@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/som/codeforces/codeforces
-BuildDirectory: /home/som/codeforces/codeforces/build
+SourceDirectory: /home/ub/Documents/codeforces
+BuildDirectory: /home/ub/Documents/codeforces/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: ubuntu-s-1vcpu-1gb-blr1-01
+Site: ubuntu
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++-10
+BuildName: Linux-x86_64-linux-gnu-g++-10
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/som/codeforces/codeforces"
+ConfigureCommand: "/usr/bin/cmake" "/home/ub/Documents/codeforces"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -62,7 +62,7 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /bin/g++-10
+Compiler: /bin/x86_64-linux-gnu-g++-10
 CompilerVersion: 10.2.0
 
 # Dynamic analysis (MemCheck)
