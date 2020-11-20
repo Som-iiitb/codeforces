@@ -43,3 +43,6 @@ main
 str_test
 .vscode/c_cpp_properties.json
 process_thread
+build/codeforces
+multithreading
+build/codeforces
