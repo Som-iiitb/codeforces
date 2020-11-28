@@ -1,14 +1,13 @@
-#include <iostream>
-#include <vector>
 #include <bits/stdc++.h>
 
-void demo(std::vector<int> *temp)
-{
+#include <iostream>
+#include <vector>
+
+void demo(std::vector<int> *temp) {
     std::cout << &temp->at(0) << std::endl;
 }
 
-int main(int, char **)
-{
+int main(int, char **) {
     std::cout << "Hello, world!\n";
 
     std::vector<int> arr = {1, 2, 3};

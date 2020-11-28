@@ -2,8 +2,7 @@
 #include <stdlib.h>
 int global_x = 3;
 
-static unsigned func(unsigned x)
-{
+static unsigned func(unsigned x) {
     printf("Hello World inside func\n");
 
     unsigned temp_final = 0;
@@ -17,21 +16,17 @@ static unsigned func(unsigned x)
     printf("\na(temp)=%p   a(temp+1)=%p  a(stat)=%p  a(x)=%p  a(x2)=%p  a(func)=%p\n",
            temp, (temp + 1), &stat, &x, &x2, &func);
 
-    if (x == 0)
-    {
+    if (x == 0) {
         return 0;
-    }
-    else
-    {
+    } else {
         x = x - 1;
         temp_final = x + func(x);
         printf("\ntemp_final=%d and addr = %p", temp_final, &temp_final);
-        return temp_final; 
+        return temp_final;
     }
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     printf("\n\n\nHello World inside main\n");
 
     static int stat = 8;

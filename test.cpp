@@ -35,13 +35,11 @@ using namespace std;
         cout << (arr[z]) << " ";     \
     cout << endl;
 #define token(str, ch) (std::istringstream var((str)); vs v; string t; while (getline((var), t, (ch))) { v.pb(t); } return v;)
-vs tokenizer(string str, char ch)
-{
+vs tokenizer(string str, char ch) {
     std::istringstream var((str));
     vs v;
     string t;
-    while (getline((var), t, (ch)))
-    {
+    while (getline((var), t, (ch))) {
         v.pb(t);
     }
     return v;
@@ -49,15 +47,13 @@ vs tokenizer(string str, char ch)
 
 void err(istream_iterator<string> it) {}
 template <typename T, typename... Args>
-void err(istream_iterator<string> it, T a, Args... args)
-{
+void err(istream_iterator<string> it, T a, Args... args) {
     cout << *it << " = " << a << endl;
     err(++it, args...);
 }
 //typedef tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update> pbds;
 
-void file_i_o()
-{
+void file_i_o() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
@@ -67,8 +63,7 @@ void file_i_o()
 #endif
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     file_i_o();
     // string str = "codechef";
     // string str1("unacademy");
@@ -116,8 +111,7 @@ int main(int argc, char const *argv[])
     cin >> str;
     istringstream var(str);
     string token;
-    while (getline(var, token, '-'))
-    {
+    while (getline(var, token, '-')) {
         cout << token << "\n";
     }
     return 0;
