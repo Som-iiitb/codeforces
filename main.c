@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 
     func(*temp);
 
-    printf("\n%p\t \t %p \t%p \t %p\t %p \t %p\n", temp, (temp + 1), &stat, &x, &main, &func);
+    printf("\n%p\t \t %p \t%p \t %p\t %p \t %p\n", temp, (temp + 1), &stat, &x, &main, &func);    
 
     return 0;
 }

@@ -3,8 +3,8 @@
 #include <iostream>
 #include <vector>
 
-void demo(std::vector<int> *temp) {
-    std::cout << &temp->at(0) << std::endl;
+void demo(std::vector<int> &temp) {
+    std::cout << &temp << std::endl;
 }
 
 int main(int, char **) {
@@ -15,10 +15,12 @@ int main(int, char **) {
 
     std::cout << arr[0] << "\t" << &arr << "\t" << ptr_arr << " \t" << std::endl;
 
-    demo(ptr_arr);
+    demo(arr);
 
     int x = 10;
     int &y = x;
+
+    std::cout << &x << "\t" << &y << std::endl;
 
     return 0;
 }
