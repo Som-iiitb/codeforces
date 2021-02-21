@@ -3,8 +3,10 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 void demo(std::vector<int> &temp) {
-    std::cout << &temp << std::endl;
+    cout << &temp << endl;
 }
 
 int main(int, char **) {
